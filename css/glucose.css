@@ -74,6 +74,7 @@
 .tips-and-tricks .slideshow-container img {
   width: 100%;
   height: fit-content;
+  flex-grow: 1;
 }
 
 .tips-and-tricks .slideshow-container .tips {
@@ -123,5 +124,9 @@
 
   .tips-and-tricks h3 {
     font-size: var(--fs-paragraph);
+  }
+
+  .tips-and-tricks p {
+    font-size: 14px;
   }
 }

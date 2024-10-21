@@ -49,7 +49,7 @@ a {
 }
 
 /* Mobile using */
-input[type="submit"] {
+input[type='submit'] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -58,7 +58,7 @@ input[type="submit"] {
 
 /* Font and colors properties*/
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -223,7 +223,7 @@ nav .logo {
 
   color: var(--text-secondary);
 
-  font-family: "Philosopher", sans-serif;
+  font-family: 'Philosopher', sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
 }
@@ -233,7 +233,7 @@ nav .menu-icon {
   display: none;
 }
 
-nav input[type="checkbox"] {
+nav input[type='checkbox'] {
   display: none;
 }
 
@@ -319,7 +319,7 @@ nav .menstrual-phases:hover .submenu {
     position: relative;
   }
 
-  nav input[type="checkbox"] {
+  nav input[type='checkbox'] {
     display: block;
 
     position: absolute;
@@ -336,7 +336,7 @@ nav .menstrual-phases:hover .submenu {
     cursor: pointer;
   }
 
-  nav input[type="checkbox"]:checked ~ ul {
+  nav input[type='checkbox']:checked ~ ul {
     display: block;
     width: 100%;
 
