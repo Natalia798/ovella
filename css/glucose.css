@@ -1,0 +1,127 @@
+.welcome {
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.welcome .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.welcome h2 {
+  margin-top: var(--spacing-xl);
+}
+
+.welcome .welcome-image {
+  align-self: flex-end;
+
+  height: 30%;
+  margin-top: var(--spacing-large);
+}
+
+@media (max-width: 768px) {
+  .welcome h2 {
+    font-size: var(--fs-sub-subtitle);
+  }
+
+  .welcome h3 {
+    font-size: var(--fs-paragraph);
+  }
+}
+
+.tips-and-tricks .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.tips-and-tricks .container h2 {
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+}
+
+.tips-and-tricks .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.tips-and-tricks .slideshow-container .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.tips-and-tricks .slideshow-container .slide:first-child {
+  display: block;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tips-and-tricks .slideshow-container img {
+  width: 100%;
+  height: fit-content;
+}
+
+.tips-and-tricks .slideshow-container .tips {
+  position: absolute;
+  right: 0;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  height: fit-content;
+  width: auto;
+  margin: auto;
+  padding: 1rem;
+}
+
+.tips-and-tricks .slideshow-container .tips h3 {
+  color: var(--button-color);
+}
+
+.tips-and-tricks .slideshow-container .tips p {
+  color: var(--text-light);
+}
+
+.tips-and-tricks .dots {
+  text-align: center;
+  margin-top: var(--spacing-large);
+}
+.tips-and-tricks .dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.125rem;
+  background-color: var(--bg-primary);
+  border-radius: 50%;
+  display: inline-block;
+  transition: var(--bg-primary) 0.6s ease;
+}
+
+.dots .active,
+.dot:hover {
+  background-color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .tips-and-tricks h2 {
+    font-size: var(--fs-sub-subtitle);
+  }
+
+  .tips-and-tricks h3 {
+    font-size: var(--fs-paragraph);
+  }
+}

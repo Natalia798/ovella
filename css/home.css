@@ -1,0 +1,64 @@
+.welcome {
+  height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.welcome .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.welcome h2 {
+  margin-top: calc(var(--spacing-xl) * 2);
+}
+
+.welcome a {
+  background-color: var(--button-color);
+  color: var(--text-button-color);
+  font-weight: bold;
+
+  padding: var(--spacing-normal);
+  border: 3px solid var(--button-color);
+  border-radius: 0.25rem;
+}
+
+.welcome a:hover {
+  background-color: transparent;
+}
+
+.welcome .background-photo {
+  position: relative;
+
+  width: 30%;
+
+  align-self: flex-end;
+
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .welcome h2 {
+    font-size: var(--fs-sub-subtitle);
+  }
+
+  .welcome h3 {
+    font-size: var(--fs-paragraph);
+  }
+
+  .welcome a {
+    padding: var(--spacing-small);
+    font-size: var(--fs-paragraph);
+  }
+}
+
+.about h2 {
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+}
+
+.about p {
+  margin: var(--spacing-normal) var(--spacing-small);
+}
