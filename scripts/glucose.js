@@ -26,3 +26,12 @@ const handleDotsClick = (element) => {
 };
 
 document.addEventListener('click', handleDotsClick);
+
+// const tipsDiv = document.querySelector('.tips');
+// let imageHeight = document.querySelector('img');
+
+// function handleClickTipsDiv() {
+//   const imgHeight = tipsDiv.offsetHeight;
+//   imageHeight.style.height = imgHeight;
+// }
+// tipsDiv.addEventListener('click', handleClickTipsDiv);

@@ -71,30 +71,31 @@
   }
 }
 
-.tips-and-tricks .slideshow-container img {
-  width: 100%;
-  height: fit-content;
-  flex-grow: 1;
-}
-
 .tips-and-tricks .slideshow-container .tips {
-  position: absolute;
-  right: 0;
-  left: 30%;
-  top: 0;
-  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  width: 700px;
+  min-height: 300px;
   height: fit-content;
-  width: auto;
   margin: auto;
   padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .tips-and-tricks .slideshow-container .tips h3 {
-  color: var(--button-color);
+  margin: var(--spacing-normal);
+  text-align: center;
+  color: var(--text-primary);
 }
 
 .tips-and-tricks .slideshow-container .tips p {
-  color: var(--text-light);
+  align-self: flex-start;
+  color: var(--text-dark);
+  margin: var(--spacing-normal);
 }
 
 .tips-and-tricks .dots {
@@ -118,6 +119,10 @@
 }
 
 @media (max-width: 768px) {
+  .tips-and-tricks .slideshow-container .tips {
+    width: 80%;
+  }
+
   .tips-and-tricks h2 {
     font-size: var(--fs-sub-subtitle);
   }

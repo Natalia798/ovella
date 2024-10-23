@@ -179,8 +179,8 @@ p {
   height: 40px;
   position: fixed;
   visibility: hidden;
-  bottom: 80px;
-  right: 15px;
+  bottom: 110px;
+  right: 10px;
   color: var(--text-button-color);
   background-color: var(--button-color);
 
