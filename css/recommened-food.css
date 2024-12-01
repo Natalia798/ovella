@@ -1,0 +1,121 @@
+.food-container-title {
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Style for tab buttons */
+.tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid var(--bg-secondary);
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--bg-secondary);
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tab-link.active {
+  background-color: var(--bg-primary);
+  border-bottom: 2px solid #fff; /* To ensure the active tab stays on top */
+}
+
+/* Style for tab content */
+.tab-content {
+  display: none; /* Hidden by default */
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid var(--bg-secondary);
+  border-top: none;
+}
+
+.tab-content.active {
+  display: block; /* Show when active */
+}
+
+/* Style for description */
+
+.description {
+  margin-bottom: var(--spacing-xl);
+}
+
+.rules {
+  margin: var(--spacing-large) 0;
+}
+
+.rules p,
+.benefits p {
+  font-weight: bold;
+}
+
+.rules ul,
+.benefits ul {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+/* Style for accordion */
+.accordion-item {
+  border: 1px solid var(--bg-primary);
+  margin-bottom: 5px;
+}
+
+.accordion-header {
+  color: var(--text-dark);
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  font-size: var(--fs-paragraph);
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+}
+
+.accordion-content {
+  display: none; /* Hidden by default */
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.accordion-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.accordion-content ul li {
+  margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tab-link {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .tab-content {
+    padding: 10px;
+  }
+
+  .accordion-header {
+    font-size: 14px;
+    color: var(--text-dark);
+  }
+}

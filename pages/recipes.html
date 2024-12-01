@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retete</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/recipes.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="welcome">
+        <div class="welcome-container container">
+          <h2>Rețete</h2>
+          <h3>
+            Descoperă rețete care aduc armonie între sănătate și gust! Fie că
+            urmezi alimentația ketobiotică, sprijini echilibrul hormonal sau
+            cauți preparate ideale pentru a-ți întrerupe postul alimentar, vei
+            găsi aici opțiuni create pentru a-ți hrăni corpul și a-ți bucura
+            simțurile. Explorează aromele unei alimentații conștiente, cu rețete
+            sănătoase și pline de savoare, potrivite călătoriei tale spre
+            bunăstare.
+          </h3>
+          <img src="../img/recipes-welcome-image.png" class="welcome-image" />
+        </div>
+      </section>
+
+      <section class="recipes">
+        <div class="container">
+          <h2 class="recipes-container-title">
+            Descoperă cele mai delicioase rețete
+          </h2>
+          <div class="recipes-container">
+            <div class="tabs">
+              <button class="tab-link" data-category="ketobiotic">
+                Alimentație ketobiotică
+              </button>
+              <button class="tab-link" data-category="hormone-support">
+                Susținerea hormonilor
+              </button>
+              <button class="tab-link" data-category="post-break">
+                Întrerupere post
+              </button>
+            </div>
+            <div class="sub-tabs">
+              <button class="sub-tab-link" data-meal="first">Prima masă</button>
+              <button class="sub-tab-link" data-meal="second">
+                A doua masă
+              </button>
+              <button class="sub-tab-link" data-meal="snack">Gustare</button>
+            </div>
+            <div class="recipe-list"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <button class="scroll-to-top-button">
+      <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+    </button>
+
+    <script src="../scripts/nav-bar.js"></script>
+    <script src="../scripts/recipes.js"></script>
+    <script src="../scripts/scroll-to-top-button.js"></script>
+    <script src="../scripts/footer.js"></script>
+  </body>
+</html>

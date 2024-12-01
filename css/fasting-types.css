@@ -1,0 +1,119 @@
+.fasting-container .fasting-types-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: fit-content;
+}
+
+.fasting-container .fasting-type {
+  background-color: var(--bg-secondary);
+  width: 300px;
+  min-height: 150px;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fasting-container ul,
+.fasting-protocols-container ul {
+  list-style-type: disc;
+  margin-left: var(--spacing-large);
+}
+
+.fasting-container h3,
+.protocol-type h3 {
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.fasting-container p {
+  margin-left: 0;
+}
+
+.fasting-container .details-button {
+  color: var(--text-dark);
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: var(--fs-paragraph);
+}
+
+.fasting-container .details-button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fasting-container .popup-container {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e4fde1;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fasting-container .popup {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.fasting-container .popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.fasting-container .popup-title {
+  align-self: center;
+}
+
+.fasting-container .close-button {
+  align-self: flex-end;
+  margin: 16px;
+  padding: 5px;
+  border: 2px solid var(--bg-secondary);
+  border-radius: 5px;
+  background-color: var(--bg-secondary);
+}
+
+.close-button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fasting-protocols {
+  margin-top: var(--spacing-large);
+  border-top: 2px solid var(--bg-primary);
+}
+
+/* Protocols container */
+
+.fasting-protocols .slideshow-container {
+  margin-top: var(--spacing-xl);
+  width: 60%;
+}
+
+.fasting-protocols .intro-list li {
+  margin-left: 40px;
+  list-style-type: disc;
+}
+
+@media (max-width: 768px) {
+  .fasting-protocols .slideshow-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .fasting-protocols .slideshow-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meniu personalizat</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/meal-planner.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="welcome">
+        <div class="welcome-container container">
+          <h2>Meniul perfect pentru fiecare fază a ciclului tău menstrual</h2>
+          <h3>
+            Te-ai săturat să te gândești zilnic ce să mănânci? Folosește
+            planificatorul nostru pentru a crea meniuri personalizate! În
+            funcție de faza ciclului menstrual în care te afli, îți oferim un
+            plan adaptat cu rețete sănătoase: alimentație ketobiotică pentru
+            fazele menstruală și post-ovulatorie sau rețete pentru susținerea
+            hormonilor în fazele de ovulație și îngrijire. Planificarea meselor
+            n-a fost niciodată mai simplă!
+          </h3>
+          <img src="../img/meal-planner.png" alt="" class="welcome-image" />
+        </div>
+      </section>
+
+      <section class="meal-planner">
+        <div class="container">
+          <div class="description">
+            <h2>Descoperă meniul tău personalizat!</h2>
+            <p>
+              <strong
+                >Cum determini faza ciclului menstrual în care te afli?</strong
+              >
+            </p>
+            <p>
+              Este simplu! Faza ta actuală depinde de ziua menstruală în care te
+              afli. Iată care sunt cele 4 faze menstruale:
+            </p>
+            <ul class="menstrual-phases">
+              <li>
+                <strong>Faza menstruală și post-menstruală:</strong> zilele 1 -
+                10,
+              </li>
+              <li><strong>Faza de ovulație:</strong> zilele 11 - 15,</li>
+              <li><strong>Faza post-ovulatorie:</strong>zilele 16 - 19,</li>
+              <li>
+                <strong>Faza de îngrijire:</strong> ziua 20 până la sângerare.
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <p>
+              Alege faza corespunzătoare din meniul dropdown în funcție de ziua
+              în care te afli pentru a primi un meniu personalizat adaptat
+              nevoilor tale nutriționale.
+            </p>
+            <button class="dropdown-button">Alege faza menstruală</button>
+            <ul class="dropdown-list open-dropdown-list">
+              <li class="menstrual">Faza menstruală și post-menstruală</li>
+              <li class="ovulation">Faza de ovulație</li>
+              <li class="postOvulation">Faza post-ovulatorie</li>
+              <li class="care">Faza de îngrijire</li>
+            </ul>
+          </div>
+          <div class="menu-container"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <button class="scroll-to-top-button">
+      <span class="material-symbols-outlined"> keyboard_arrow_up </span>
+    </button>
+
+    <script src="../scripts/nav-bar.js"></script>
+    <script src="../scripts/meal-planner.js"></script>
+    <script src="../scripts/scroll-to-top-button.js"></script>
+    <script src="../scripts/footer.js"></script>
+  </body>
+</html>

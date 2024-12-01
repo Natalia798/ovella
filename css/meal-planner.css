@@ -1,0 +1,123 @@
+.welcome .welcome-image {
+  border-radius: 10px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meal-planner .description h2 {
+  margin-bottom: var(--spacing-xl);
+}
+.meal-planner .menstrual-phases li {
+  margin-left: var(--spacing-xl);
+  list-style-type: disc;
+}
+
+.meal-planner .dropdown p {
+  color: var(--text-primary);
+  font-weight: bolder;
+  margin-top: var(--spacing-large);
+}
+
+.meal-planner .dropdown-button,
+.regenerate-menu-button {
+  background-color: var(--button-color);
+  color: var(--text-button-color);
+
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+
+  font-size: var(--fs-paragraph);
+  font-weight: bolder;
+  padding: var(--spacing-small);
+
+  margin-left: var(--spacing-xl);
+}
+
+.meal-planner .regenerate-menu-button {
+  margin-left: 0;
+}
+
+.meal-planner .dropdown-button:hover,
+.regenerate-menu-button:hover {
+  cursor: pointer;
+  background-color: var(--text-light);
+}
+
+.meal-planner .dropdown .dropdown-list {
+  display: none;
+  margin-left: var(--spacing-xl);
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+  padding: 5px;
+  width: fit-content;
+}
+
+.dropdown .dropdown-list li {
+  border: 1px solid var(--text-secondary);
+  background-color: var(--text-light);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.dropdown .dropdown-list li:hover {
+  cursor: pointer;
+  border-width: 2px;
+}
+
+.menu-container {
+  margin-top: var(--spacing-large);
+}
+.menu-title {
+  align-self: center;
+  margin-bottom: var(--spacing-large);
+}
+
+.recipe-card {
+  padding: 15px;
+  background-color: var(--bg-secondary);
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.total-menu {
+  background-color: var(--bg-primary);
+  box-shadow: 0 2px 4px var(--bg-primary);
+}
+
+.recipe-card .recipe-name {
+  font-weight: bold;
+  font-size: var(--fs-paragraph);
+  color: var(--text-primary);
+  margin-bottom: 10px; /* Space between recipe name and nutrients */
+}
+
+.recipe-card .nutrients {
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text-primary);
+  justify-content: flex-start;
+}
+
+.recipe-card .nutrients i {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .recipe-card {
+    width: 100%;
+  }
+}

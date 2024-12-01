@@ -1,0 +1,120 @@
+.menstrual-cycle .cycle-container {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: fit-content;
+}
+
+.menstrual-cycle .menstrual-type {
+  background-color: var(--bg-secondary);
+  width: 40%;
+  min-height: 200px;
+  height: fit-content;
+  margin: 10px auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menstrual-cycle h3 {
+  font-size: var(--fs-sub-subtitle);
+  margin-bottom: var(--spacing-large);
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.menstrual-cycle .details-button {
+  color: var(--text-dark);
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: var(--fs-paragraph);
+  margin-left: 10px;
+}
+
+.menstrual-cycle .details-button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menstrual-cycle .recommend-button {
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.menstrual-cycle .recommend-button:hover {
+  background-color: transparent;
+}
+
+.menstrual-cycle .recommend-button a:hover {
+  cursor: pointer;
+}
+
+.menstrual-cycle .recommend-button a {
+  color: var(--text-dark);
+}
+
+.menstrual-cycle .popup-container {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e4fde1;
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menstrual-cycle .popup {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.menstrual-cycle .popup-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.menstrual-cycle .popup-title {
+  align-self: center;
+}
+
+.menstrual-cycle .close-button {
+  align-self: flex-end;
+  margin: 16px;
+  padding: 5px;
+  border: 2px solid var(--bg-secondary);
+  border-radius: 5px;
+  background-color: var(--bg-secondary);
+}
+
+.menstrual-cycle .close-button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.menstrual-cycle {
+  margin-top: var(--spacing-large);
+  border-top: 2px solid var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+  .menstrual-cycle .menstrual-type {
+    width: 80%;
+  }
+
+  .menstrual-cycle .details-button,
+  .menstrual-cycle .recommend-button a {
+    font-size: 14px;
+  }
+}
