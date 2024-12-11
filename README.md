@@ -29,3 +29,13 @@ Recipes are loaded dynamically from a **GitHub-hosted JSON file**, making the ap
 - **JavaScript (ES6)**: For dynamic functionality and interaction.
 - **JSON**: To store and retrieve recipes.
 - **Netlify**: For deployment.
+
+---
+## 🌟 Explore More Projects  
+
+Here are some of my other projects:  
+
+- [News App](https://github.com/Natalia798/news-app) - A React-based app for browsing and saving favorite news articles.  
+- [Weather Forecast App](https://github.com/Natalia798/weather-forecast-app) - Displays current weather and 5-day forecasts.  
+- [ITSchool Clone](https://github.com/Natalia798/website-clone-np) - A basic HTML/CSS clone of the ITSchool website.  
+
